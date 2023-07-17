@@ -17,8 +17,10 @@ const express = require("express")
      }
      app.use("/user",UserRouter)
        app.use("/post",postRouter);
+
+
    app.listen(process.env.PORT,()=>{
-          connect()
+          connect();
      console.log("server running");
    })
 
